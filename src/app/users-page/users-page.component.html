@@ -1,3 +1,9 @@
+<div>
+    <button [disabled]="currentPage ===1" (click)="prevPage()">prev</button>
+    <button (click)="nextPage()">next</button>
+</div>
+
+
 <ng-container *ngFor="let user of users">
     <app-user-card  [profile]="user"></app-user-card>
 </ng-container>
